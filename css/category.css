@@ -1,0 +1,82 @@
+/*ÂúÆÁÒ³Ãæ*/
+html,body{
+    height: 100%;
+}
+/*·ÖÀàºÐ×Ó*/
+.jd_category{
+    height: 100%;
+    padding-top: 45px;
+    overflow: hidden;
+}
+/*×ó²àÀ¸*/
+.jd_category_left{
+    width: 90px;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+}
+.jd_category_left > ul{
+
+}
+.jd_category_left > ul > li{
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.jd_category_left > ul > li a{
+    display: block;
+}
+.jd_category_left > ul > li.now{
+    border-right: none;
+
+}
+.jd_category_left > ul > li.now a{
+    color: #d8505c;
+}
+
+/*ÓÒ²àÀ¸*/
+.jd_category_right{
+    overflow: hidden;
+    height: 100%;
+}
+
+.jd_category_right_box{
+    padding: 0 10px;
+}
+
+.jd_category_right_box > .banner{
+    width: 100%;
+    padding-top: 10px;
+    display: block;
+}
+.jd_category_right_box > .banner > img{
+    width: 100%;
+}
+.hot_cat{
+    margin-top: 10px;
+}
+.hot_cat > h3{
+    font-size: 12px;
+}
+.hot_cat > ul{
+    width: 100%;
+}
+.hot_cat > ul > li{
+    width: 33.333%;
+    float: left;
+}
+.hot_cat > ul > li > a{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+}
+.hot_cat > ul > li > a > img{
+    width: 62px;
+    height: 62px;
+    margin: 0 auto;
+    display: block;
+}
+

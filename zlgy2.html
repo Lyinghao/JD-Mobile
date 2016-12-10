@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    </head>
+    <body>
+    </body>
+    <script>
+        if (window.DeviceMotionEvent) { 
+                 window.addEventListener('devicemotion',deviceMotionHandler, false);  
+        } 
+        var speed = 30;//speed
+        var x = y = z = lastX = lastY = lastZ = 0;
+        function deviceMotionHandler(eventData) {  
+          var acceleration =eventData.accelerationIncludingGravity;
+                x = acceleration.x;
+                y = acceleration.y;
+                z = acceleration.z;
+                if(Math.abs(x-lastX) > speed || Math.abs(y-lastY) > speed || Math.abs(z-lastZ) > speed) {
+                    //简单的摇一摇触发代码
+                    alert(1);
+                    document.write('<h1>你懂了 ! x:'+x+'，y:'+y+',z:'+z+'</h1>');
+                }
+                lastX = x;
+                lastY = y;
+                lastZ = z;
+        }
+    </script>
+</html>
